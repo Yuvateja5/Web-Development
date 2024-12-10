@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="icon" type="image/icon"  href="assets/images/ticon.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;    
+         }
+
+         body {
+            background: linear-gradient(to left, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(assets/images/background.png);      
+            background-size: cover;   
+            font-family: Arial, Helvetica, sans-serif;  
+        }
+
+
+        .logo{
+           color: #ff7200;
+           font-size: 18px;
+           font-style: italic;
+           padding-left: 10px;
+           float: left;  
+           padding-top: 18px;
+           
+        }
+
+
+        ul{
+          float: left;
+          display: flex;  
+          
+        }
+
+        ul li{
+          list-style: none; 
+          margin-left: 60px;
+          margin-top: 25px;
+          font-size: 14px; 
+        }
+
+         ul li a{
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+        }
+
+        
+        ul li a:hover{
+          background-color: #ff7200;
+          color: #fff;
+          border: 1px solid #ff7200;
+          border-radius: 5px;
+          padding: 3px;
+
+        }
+
+         main{
+            position: relative;
+        }
+
+        
+        .main1 {
+            position: absolute;
+            top: 120px;
+            left: 50px;
+        }
+
+        .main1 h2{
+            color: #fff;          
+            font-size:35px;
+            width: 250px;
+            
+        } 
+
+         .main1 p{
+            text-align: justify;
+            font-size: small;
+            color: #fff;
+            margin-top: 10px;
+            width: 500px;
+        } 
+
+         .main2{
+            position: absolute;
+            top: 350px;
+            left: 50px;
+        } 
+
+        .main2 button{
+            border: none; 
+            background-color: #ff7300f7;
+            color: #fff;
+            width: 90px;
+            height: 30px;
+            cursor: pointer; 
+            border-radius: 10px;
+        }
+
+        .main2 button:hover{
+            transform: scale(1.1); 
+        }
+
+        footer{
+            position: fixed;
+            bottom: 15px;
+            left: 350px;
+            color: #fff;
+            font-size: smaller;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+            <div class="logo">
+                <h2>SKLTECH</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>                        
+        </nav>
+    </header>
+
+    <main>
+        <div class="main1">
+            <h2> Web Design & <span style="color: #ff7200;">Development</span> Course</h2>
+            <p>Learn HTML5 for structuring web content and CSS3 for styling and layout.</p>
+            <p>Understand the foundations of web design, including color theory.</p>
+            <p>to create design elements</p>
+        </div>
+
+        <div class="main2">
+            <button> Join us</button>
+        </div>
+    </main>
+
+    <footer>
+        &copy; SKLTECH.All rights reserved.
+    </footer>
+      
+</body>
+</html>

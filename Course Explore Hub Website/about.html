@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="icon" type="image/icon"  href="assets/images/ticon.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;    
+         }
+
+         body {
+            background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(assets/images/background.png); 
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;     
+        }
+
+
+        .logo{
+           color: #ff7200;
+           font-size: 18px;
+           font-style: italic;
+           padding-left: 10px;
+           float: left;  
+           padding-top: 18px;
+           
+        }
+
+        ul{
+          float: left;
+          display: flex;
+        }
+
+        ul li{
+          list-style: none;
+          margin-left: 60px;
+          margin-top: 25px;
+          font-size: 14px;
+
+        }
+
+         ul li a{
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+        }
+
+        ul li a:hover{
+          background-color: #ff7200;
+          color: #fff;
+          border: 1px solid #ff7200;
+          border-radius: 5px;
+          padding: 3px;
+
+        }
+
+        main{
+            position: relative;
+        }
+
+        main .content{
+            position: absolute;
+            top: 120px;           
+        }
+
+        .content h2{
+            color:#ff7200;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .content p{
+            color: bisque;
+            text-align: justify;
+            line-height: 20px;
+            padding:0px 70px 15px 20px ;
+            line-height: 20px;
+            
+        }
+
+        footer{
+            position: fixed;
+            bottom: 15px;
+            left: 350px;
+            color: #fff;
+            font-size: smaller;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+            <div class="logo">
+                <h2>SKLTECH</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>                        
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>About <span style="color:#fff;">Us</span></h2>
+            <p>We are a dedicated team of web developers and designers passionate about crafting user-friendly websites and applications. Our mission is to provide high-quality web solutions tailored to meet the needs of our clients.</p>
+            <br>
+            <p>With years of experience in the field, we specialize in both the technical and creative aspects of web development. From coding complex backend systems to creating stunning designs, we do it all!</p>
+            <br>
+            <p>We believe in continuous learning and innovation, ensuring our clients stay ahead in the ever-evolving digital landscape.</p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; SKLTECH.All rights reserved.
+    </footer>
+       
+</body>
+</html>

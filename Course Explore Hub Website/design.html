@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="icon" type="image/icon"  href="assets/images/ticon.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;    
+         }
+
+         body {
+            background: linear-gradient(to right, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(assets/images/background.png);           
+            background-size: cover;  
+            font-family: Arial, Helvetica, sans-serif;
+    
+        }
+
+
+        .logo{
+           color: #ff7200;
+           font-size: 18px;
+           font-style: italic;
+           padding-left: 10px;
+           float: left;  
+           padding-top: 18px;
+           
+        }
+
+        .menu ul{
+          float: left;
+          display: flex;
+          
+        }
+
+        .menu ul li{
+          list-style: none;
+          margin-left: 62px;
+          margin-top: 27px;
+          font-size: 14px;
+
+        }
+
+         .menu ul li a{
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+        }
+
+        ul li a:hover{
+          background-color: #ff7200;
+          color: #fff;
+          border: 1px solid #ff7200;
+          border-radius: 5px;
+          padding: 3px;
+
+        }
+
+        main{
+            position: relative;
+        }
+
+        main .content{
+            position: absolute;
+            top: 120px;
+            
+        }
+
+        .content h2{
+            color:#ff7200;
+            margin-bottom: 20px;
+            padding-left: 40px;
+        }
+
+        .content ul{
+            list-style: none;
+            display: flex;
+        }
+
+        .content ul li{
+            padding: 20px;
+            margin: 20px;
+            width: 200px;
+            height: 80px;
+            color: #fff;
+            border: 1px solid white;
+            border-radius: 30px;
+        }
+
+        footer{
+            position: fixed;
+            bottom: 15px;
+            left: 350px;
+            color: #fff;
+            font-size: smaller;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+            <div class="logo">
+                <h2>SKLTECH</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>                        
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>Our Design Philosophy</h2>
+            <ul>
+              <li><strong>Clarity:</strong> <br>Creating designs that are intuitive and easy to navigate.</li>
+              <li><strong>Creativity:</strong> <br>Delivering innovative solutions that stand out from the competition.</li>
+              <li><strong>Consistency:</strong><br> Ensuring a cohesive and professional look across all platforms.</li>
+            </ul>
+          </div>
+    </main>
+
+    <footer>
+        &copy; SKLTECH.All rights reserved.
+    </footer>
+       
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="icon" type="image/icon"  href="assets/images/ticon.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;    
+         }
+
+         body {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)), url(assets/images/background.png); 
+            background-size: cover;  
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .logo{
+           color: #ff7200;
+           font-size: 18px;
+           font-style: italic;
+           padding-left: 10px;
+           float: left;  
+           padding-top: 18px;
+           
+        }
+
+        ul{
+          float: left;
+          display: flex;
+        }
+
+        ul li{
+          list-style: none;
+          margin-left: 62px;
+          margin-top: 27px;
+          font-size: 14px;
+
+        }
+
+         ul li a{
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+
+        }
+
+        ul li a:hover{
+          background-color: #ff7200;
+          color: #fff;
+          border: 1px solid #ff7200;
+          border-radius: 5px;
+          padding: 3px;
+
+        }
+
+        main{
+            position: relative;
+        }
+
+        .main1{
+            position: absolute;
+            top: 120px;
+            left: 20px;
+            width: 300px;
+            color: #fff;
+            line-height: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            text-align: justify;
+        }
+
+        .main2{
+            position: absolute;
+            top: 80px;
+            right: 50px;
+            border: 1px solid rgb(23, 6, 3);
+            border-radius: 10px;
+            width: 220px;
+            height: 290px;
+        }
+
+        .main2 h2{
+            color: #fff;
+            margin: 15px;
+
+        }
+
+        input{
+            margin: 15px;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid  #ff7200;
+        }
+
+        button{
+            border: none;
+            margin: 20px;
+            background-color: #ff7200;
+            width: 150px;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        button a{
+            text-decoration: none; 
+            padding: 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        footer{
+            position: fixed;
+            bottom: 15px;
+            left: 350px;
+            color: #fff;
+            font-size: smaller;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+            <div class="logo">
+                <h2>SKLTECH</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>                        
+        </nav>
+    </header>
+
+    <main>
+        <div class="main1">
+            <p>If you have any questions, need support, or want to learn more about our services, feel free to reach out after logging in.</p>
+        </div>
+        
+        <div class="main2">
+            <h2>Login Here</h2>
+                    <input type="Name" name="name" placeholder="Enter your Name "><br>
+                    <input type="email" name="email" placeholder="Enter your Email "><br>
+                    <input type="tel" name="mobile" placeholder="Enter your Mobile "><br>
+                    <button><a href="login">Login</a></button>
+        </div>
+    </main>
+
+    <footer>
+        &copy; SKLTECH.All rights reserved.
+    </footer>
+    
+</body>
+</html>

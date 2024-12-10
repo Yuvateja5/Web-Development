@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="icon" type="image/icon"  href="assets/images/ticon.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;    
+         }
+
+         body {
+            background: linear-gradient(to right, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(assets/images/background.png); 
+             background-size: cover;   
+            font-family: Arial, Helvetica, sans-serif;  
+        }
+
+
+        .logo{
+           color: #ff7200;
+           font-size: 18px;
+           font-style: italic;
+           padding-left: 10px;
+           float: left;  
+           padding-top: 18px;
+           
+        }
+    
+        .menu ul{
+          float: left;
+          display: flex;
+          
+        }
+
+        .menu ul li{
+          list-style: none;
+          margin-left: 60px;
+          margin-top: 25px;
+          font-size: 14px;
+
+        }
+
+         .menu ul li a{
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+
+        }
+
+        ul li a:hover{
+          background-color: #ff7200;
+          color: #fff;
+          border: 1px solid #ff7200;
+          border-radius: 5px;
+          padding: 3px;
+
+        }
+
+
+        main{
+            position: relative;
+        }
+
+        main .content{
+            position: absolute;
+            top: 120px;
+            color: #fff;
+        
+            
+        }
+
+        .content h1{
+            margin-bottom: 20px;
+            padding-left: 20px;
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .content p{
+            margin-bottom: 20px;
+            padding-left: 20px;
+            font-weight: lighter;
+            
+        }
+
+        .content ul{
+            display: flex;
+            list-style: none; 
+        }
+
+        .content ul li{
+            margin-top: 20px;
+            padding-left: 20px;
+            line-height: 20px;
+            padding-right: 20px;
+        }
+
+        footer{
+            position: fixed;
+            bottom: 15px;
+            left: 350px;
+            color: #fff;
+            font-size: smaller;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+            <div class="logo">
+                <h2>SKLTECH</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>                        
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <h1><span style="color: #ff7200;">Our</span> Services</h1>
+            <p>Our wide range of services is designed to cater to all your web development needs:</p>
+            <ul>
+              <li><strong style="color: #ff7200;">Web Development:</strong> Custom-built websites that are fast, secure, and scalable.</li>
+              <li><strong style="color: #ff7200;">Web Design:</strong> Eye-catching and user-friendly designs that captivate your audience.</li>
+              <li><strong style="color: #ff7200;">E-commerce Solutions:</strong> Fully functional online stores that boost your sales.</li>
+              <li><strong style="color: #ff7200;">SEO Optimization:</strong> Improve your site's visibility and rank higher in search engines.</li>
+              <li><strong style="color: #ff7200;">Maintenance & Support:</strong> Keep your website updated and running smoothly.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        &copy; SKLTECH.All rights reserved.
+    </footer>
+        
+    
+
+    
+</body>
+</html>
