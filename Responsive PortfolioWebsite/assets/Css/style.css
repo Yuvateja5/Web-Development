@@ -1,0 +1,459 @@
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #2a3543;;
+    color: #fff;
+  }
+
+  header{
+    background-color: #193252;
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+    
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+    color: white;
+    max-width: 1200px; 
+    
+  }
+
+  .logo{
+    margin-left: 30px;
+    font-size: xx-large;
+    font-weight: bold;
+    
+  }
+
+  .logo::first-letter{
+    font-size: 50px;
+    color: #8874ef;
+    
+  }
+
+  nav ul{
+    margin-left:500px ;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+          
+    
+  }
+
+  nav ul a{
+   text-decoration: none;
+   color: white;
+    
+  }
+
+  nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+    
+  }
+
+  nav ul li:hover{
+    border-bottom: 2px solid #8874ef;;
+    transition: 0.2s ease-in;
+    color: #8874ef;
+    
+  }
+
+   button a{
+    text-decoration: none;
+    color: white;
+    
+  }
+
+   button{
+    border: none;
+    padding: 15px;
+    background-color: #8874ef;
+    color: white;
+    margin-right: 50px;
+    border-radius: 10px;
+    
+  }
+
+
+   button:hover{
+    background-color: #772fed;
+    cursor: pointer;
+
+  }
+
+  #home{
+    display: flex;
+  }
+
+  #home .text{
+    margin: 75px 0px 0px 30px   
+  } 
+
+  .small-text{
+    text-align: center;
+  }
+
+  .text h1{
+   font-size: 55px;
+   line-height: 20px;
+  }
+
+  .text p{
+    color: #a2acbb;
+    text-align: justify;
+    line-height: 25px;
+  }
+
+  #home img{
+    margin: 100px;
+    border-radius: 300px;
+  }
+
+ .about-me1
+ {
+    text-align: center;  
+  }
+
+  .about-me1 p{
+    color: #a2acbb;
+    text-align: justify;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .about-me2{
+   display: grid;
+   grid-template-columns: auto auto;
+  }
+
+  .education{
+    margin: 20px 0px 20px 50px ;
+  }
+
+
+  .education div{
+    border: 1px solid transparent;
+    padding: 20px 60px;
+    margin: 20px;
+    background-color: #333e4d;
+    border-radius:10px ;
+    line-height: 10px;
+    transition: 0.2s ease-in;
+  }
+
+  .education div:hover{
+    transform: scaleX(1.02);
+    transition: 0.2s ease-in;
+    color: white;
+
+  }
+
+   .intern{
+    margin:20px 50px 50px 50px ;
+  }
+
+  .intern h1{
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .intern p{
+    color: #a2acbb;
+    line-height: 25px;
+    text-align: justify;
+  }
+
+  .heading{
+    display: flex;
+    justify-content: center;
+  }
+
+  .heading span{
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid transparent;
+    background-color: #333e4d;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: rgb(234, 234, 125);
+
+  }
+
+  .icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 30px 150px;
+  }
+
+  .icons img{
+    border: 1px solid transparent;
+    background-color: #333e4d;
+    padding: 30px;
+    margin: 20px;
+    transform: 0.2s;
+  }
+
+  .icons img:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+  }
+
+  #projects .topic{
+    display: flex;
+    justify-content: center;    
+  }
+
+  .topic h2{
+    font-size: xx-large;
+    color: rgb(234, 234, 125);
+
+  }
+
+  #projects .container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container .web{
+    border: 1px solid transparent;
+    padding: 20px;
+    background-color: #333e4d;
+    border-radius: 10px;
+    width: 600px;
+    margin: 30px;
+  }
+
+  .web h3{
+    font-size: 30px;
+  }
+
+  .container .ml{
+    border: 1px solid transparent;
+    padding: 20px;
+    background-color: #333e4d;
+    border-radius: 10px;
+    width: 600px;
+    margin: 30px;
+  }
+
+  .ml h3{
+    font-size: 30px;
+  }
+
+  .container ul li{
+    list-style: none;
+    line-height: 50px;
+  }
+
+  #contact .head{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+  }
+
+  .details{
+    display: flex;  
+    justify-content: center;
+    border: 2px solid transparent;
+    padding: 30px;
+    margin: 20px;
+    background-color: #333e4d;
+  }
+
+  footer{
+    display: grid;
+    justify-content: center;
+    padding: 30px;
+    background-color: #07111e;
+  }
+
+  footer h1,h2{
+    line-height: 15px;
+  }
+
+  footer h2{
+    font-size: 20px;
+    color: #4b535e;
+  }
+
+  footer p{
+    color: #4b535e;
+    font-weight: bold;
+    padding-top: 60px;
+    font-size: 18px
+    
+  }
+
+  footer .links{
+    margin-top: 30px;
+  }
+
+  footer .links a{
+    margin-right: 20px;
+    color: white;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #333e4d;
+    border-radius: 25px; 
+    transition: 0.4s;  
+  }
+
+  footer .links a:hover{
+    background-color: rgb(59, 191, 59);
+    transform: 0.4s;
+
+  }
+
+  @media (max-width: 768px) {
+    
+     nav ul {
+      display: flex;
+      position: absolute;
+      top: 60px;
+      right: 12px;
+      background-color: #193252;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  
+     nav .logo {
+      display: block; 
+      font-size: 24px;
+      cursor: pointer;
+      margin-right: 20px; 
+    }
+   
+    #home {
+      flex-direction: column; 
+      text-align: center;
+      margin: 20px;
+    }
+  
+    #home img {
+      margin: 20px auto;
+      width: 200px; 
+      height: 200px;
+    }
+
+    #home .text h1{
+        font-size: 30px;
+
+    }
+   
+    .about-me2 {
+      grid-template-columns: 1fr; 
+      gap: 20px;
+      text-align: center;
+    }
+
+    .education h3,p{
+        line-height: 25px;
+
+    }
+  
+   
+    .icons {
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .icons img {
+      width: 60px;
+      height: 60px; 
+    }
+  
+   
+    #projects .container {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .container .web, .container .ml {
+      width: 100%; 
+      margin: 10px 0;
+      
+    }
+
+    .web h3, .ml h3{
+        padding: 20px;
+    }
+  
+    .details {
+      flex-direction: column; 
+      gap: 15px;
+    }
+  
+   
+    footer .links a {
+      margin: 5px; 
+      padding: 10px;
+  }
+}
+  
+  @media (max-width: 480px) {
+    
+    .logo {
+      font-size: 18px; 
+    }
+  
+    #home .text h1 {
+      font-size: 24px; 
+    }
+  
+    #home .text p {
+      font-size: 14px; 
+      margin: 10px;
+    }
+
+    .about-me1 p{
+      margin: 30px;
+      width: 300px;
+    }
+  
+    footer p {
+      font-size: 14px; 
+  }
+}
+
+@media screen and (max-width:1200px) {
+  
+  nav ul {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #193252;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .text h1{
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .about-me1 p{
+    line-height: 23px;
+  }
+
+  .education div{
+    padding: 50px 20px;
+  }
+
+  .education div p{
+    line-height: 20px;
+  }
+  
+}
+
+
+
+
