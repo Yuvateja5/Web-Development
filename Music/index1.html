@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+        :root {
+            --purple500: #281154;
+            --purple300: #270082;
+            --purple600: #1b0058;
+            --red600: #dc0000;
+            --body: #f9f6ff;
+            --max-width: 1200px;
+             }
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+             font-family: "Roboto", sans-serif;
+             font-weight: 300;
+        }
+
+        header{
+            background-color:var(--purple300) ;
+            position: sticky;
+            top: 0;
+            z-index: 100;         
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            align-items: center;
+            color: white;
+            max-width: 1200px; 
+        }
+
+        .logo{
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            
+        }
+
+        nav ul a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li{
+            border-bottom: 2px solid transparent;
+            transition: 0.2s ease-in;
+        }
+
+        nav ul li:hover{
+            border-bottom: 2px solid white;
+            transition: 0.2s ease-in;
+        }
+
+        #overview{
+            background-image: url(assets/images/hero_image.png);
+             height: 100vh; 
+             display: grid;
+             color: white;
+             place-items: center;
+             text-align: center;  
+        }
+
+        #overview .container{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        #overview .container h1{
+            font-size: 100px;          
+        }
+
+        #overview .container h3{
+            font-size: 40px;          
+        }
+
+        #music{
+            padding-top: 50px;
+            background-color: var(--purple500);
+            color: white;
+        }
+
+        #music .container{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;  
+            padding: 10px;         
+        }
+
+        .b1{
+            background-color: var(--red600);
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            transition: 0.2s ease-in-out;
+        }
+
+        button:hover{
+            transition: 0.2s ease-in-out;
+            opacity: 0.8;
+
+        }
+
+        .ipad{
+            margin-top: -400px; 
+            position: relative;
+            top: 400px;
+        }
+
+        .about-music{
+            padding-top: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+            text-align: center;
+        }
+
+        .b2{
+            background-color: var(--purple300);
+            border: none;
+            padding: 10px;
+            color:white
+            
+        }
+
+        #video{
+            background-image: url(assets/images/music.png);
+            min-height: 600px;
+            margin-top:100px;
+            color: white;
+            display: grid;
+            align-items: center;
+            text-align: center;
+        }
+
+        #video .container{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: -200px;
+        }
+
+        #gift{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 100px 20px;
+           
+        }
+
+        #gift .content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: justify;
+        }
+
+        .footer-upper {
+  background-color: var(--purple600);
+  padding: 20px;
+}
+.footer-upper .container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.footer-upper h4 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.footer-lower {
+  background-color: var(--purple300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+        
+        
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">myTunes</div>
+
+            <ul>
+                <a href="#overview"><li>Overview</li></a>
+                <a href="#music"><li>Music</li></a>
+                <a href="#video"><li>Video</li></a>
+                <a href="#gift"><li>Gift Cards</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview">
+            <div class="container">
+                <h1>my Tunes</h1>
+                <h3>Your music, movies, and TV shows take center stage.</h3>
+                <p>myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have — and shop for the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.</p>
+            </div>            
+        </section>
+
+        <section id="music">
+            <div class="container">
+                <h1>Music</h1>
+                <p>Stream over 45 million songs, ad-free. Or download albums and tracks to listen to offline. All the music in your personal myTunes library — no matter where it came from — lives right alongside the Orange Music catalog. Start your free three-month trial with no commitment, and cancel anytime.</p>
+                <button class="b1">Start Your Trial Now</button>
+                <p>Orange Music is available in myTunes, and for iOS and Android devices.</p>
+           
+
+               <div class="ipad">
+                <img src="assets/images/ipad-iphone.png" alt="">
+               </div>
+            </div>
+        </section>
+
+        <section class="about-music">
+         
+                <h3>The movie and TV collection you always wished for. Granted.</h3>
+                <p>With over 100,000 movies and TV shows to choose from, there’s always something great to watch on myTunes and if you watch on Orange TV 4K, you’ll be able to enjoy a tremendous selection of your favorite content in 4K HDR. So get ready to enjoy episodes of your favorite TV shows or hit movies you’ve been waiting to see — anytime, anywhere. Just tap to play, or even download if you’re going somewhere you won’t have Wi-Fi.</p>
+                <button class="b2">Read more</button>
+
+                <div>
+                    <img src="assets/images/hero1.png" alt="">
+                </div>           
+        </section>
+
+        <section id="video">
+            <div class="container">
+                <h4>A world of entertainment. Available wherever you are.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo non velit repellat alias saepe inventore repellendus? Molestias suscipit eos tempora? Quae quaerat cumque in veritatis impedit dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi totam ad quas? Ipsam laudantium soluta delectus!</p>
+            </div>
+        </section>
+
+        <section id="gift">          
+                <div>
+                    <img src="assets/images/gift-card.png" alt="">
+                </div>
+
+                <div class="content">
+                    <h4>Gift Card</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt cum explicabo, excepturi eaque commodi minima quas repellendus assumenda facere hic, earum quasi iste asperiores molestiae obcaecati laborum, voluptatum alias velit cupiditate! Quae soluta sapiente quasi, iusto quam magnam doloribus natus quod eius, rerum asperiores aspernatur. Illum neque sequi odit fuga.</p>
+                    <p>Already have an Orange MyTunes Music Gift Card?</p>
+                    <hr>
+                    <button class="b2">Redeem</button>
+                </div>
+        </section>
+
+        <footer>
+
+            <section class="footer-upper">
+                <div class="container">
+                  <div class="footer-links">
+                    <h4>Shop & Learn</h4>
+                    <ul>
+                      <li>Music</li>
+                      <li>Movies</li>
+                      <li>Shows</li>
+                      <li>Apps</li>
+                      <li>Gift Cards</li>
+                    </ul>
+                  </div>
+                  <div class="footer-links">
+                    <h4>Orange Store</h4>
+                    <ul>
+                      <li>Find a Store</li>
+                      <li>Today at Orange</li>
+                      <li>Financing</li>
+                      <li>Orange Camp</li>
+                      <li>Order Status</li>
+                    </ul>
+                  </div>
+                  <div class="footer-links">
+                    <h4>Education & Business</h4>
+                    <ul>
+                      <li>Orange & Education</li>
+                      <li>Shop for Collage</li>
+                      <li>Orange & Business</li>
+                      <li>Shop for Business</li>
+                      <li>Jobs</li>
+                    </ul>
+                  </div>
+                  <div class="footer-links">
+                    <h4>About Orange</h4>
+                    <ul>
+                      <li>Newsroom</li>
+                      <li>Orange Leadership</li>
+                      <li>Investors</li>
+                      <li>Envents</li>
+                      <li>Contact Orange</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+        
+              
+              <section class="footer-lower">
+                <p>Copyright © 2022 Do Some Coding</p>
+              </section>
+
+        </footer>
+
+        
+    </main>
+    
+</body>
+</html>
