@@ -1,0 +1,26 @@
+#ip {
+    background-color: rgb(32, 58, 203);
+    border: 2px solid black;
+    margin-left: 50px;
+    padding: 20px;
+    margin-right: 550px;
+    margin-bottom: 20px;
+    margin-top: 10px; 
+    border-radius: 50px;
+
+}
+
+#output{
+    background-color: rgb(238, 244, 244);
+    border: 2px solid black;
+    margin-right: 550px;
+    margin-left: 50px; 
+    text-align: center;  
+    padding-bottom: 10px;
+    border-radius: 50px;
+
+}
+
+img{
+    border-radius: 50px;
+}
